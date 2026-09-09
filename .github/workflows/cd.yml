@@ -30,4 +30,4 @@ jobs:
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
 
       - name: Build and push to Artifact Registry
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/$(gcloud config get-value project)/notely-ar-repo/notely:latest .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-508109/notely-ar-repo/notely:latest .
